@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Senja | Premium Experience</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">KOPI<span>SENJA</span></div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="badge">Authentic Coffee Roastery</span>
+        <h1>
+          Rasakan Keajaiban di Setiap <span class="highlight">Tetesnya</span>
+        </h1>
+        <p>
+          Lebih dari sekadar kafe, kami adalah ruang untuk cerita dan inspirasi
+          Anda.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn primary">Explore Menu</a>
+          <a href="#about" class="btn secondary">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Warisan Rasa Sejak 2020</h2>
+            <p>
+              Kami percaya bahwa kopi terbaik bermula dari kejujuran proses.
+              Dari petani lokal hingga ke cangkir Anda, setiap langkah adalah
+              dedikasi.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <strong>15+</strong>
+                <p>Biji Pilihan</p>
+              </div>
+              <div class="stat-item">
+                <strong>10k+</strong>
+                <p>Pelanggan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="section-title">Signature Series</h2>
+        <div class="menu-grid">
+          <div class="card">
+            <i class="fas fa-mug-hot"></i>
+            <h3>Midnight Espresso</h3>
+            <p>Intensitas tinggi dengan sentuhan rasa cokelat hitam.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-ice-cream"></i>
+            <h3>Cloudy Latte</h3>
+            <p>Tekstur lembut susu dengan foam yang ringan seperti awan.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-leaf"></i>
+            <h3>Forest Brew</h3>
+            <p>Metode V60 dengan biji kopi origin pegunungan tropis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="location">
+      <div class="container">
+        <h2 class="section-title">Visit Our Roastery</h2>
+        <div class="location-wrapper">
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.284242258414!2d106.82468307481524!3d-6.226194460975608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4a9058b29%3A0x6b1897c5513d8a1c!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <div class="info-box">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Alamat</h3>
+              <p>Jl. Senopati No. 45, Kebayoran Baru, Jakarta Selatan, 12110</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <h3>Jam Operasional</h3>
+              <p>Setiap Hari: 08.00 - 23.00 WIB</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Reservasi</h3>
+              <p>+62 812-3456-7890</p>
+            </div>
+            <a
+              href="https://maps.google.com"
+              target="_blank"
+              class="btn primary"
+              >Open in Google Maps</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Kopi Senja. Premium Coffee Experience.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".nav-links");
+
+      // Toggle menu saat ikon diklik
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.toggle("active");
+      });
+
+      // Tutup menu otomatis saat salah satu link diklik
+      document.querySelectorAll(".nav-links a").forEach((n) =>
+        n.addEventListener("click", () => {
+          menu.classList.remove("is-active");
+          menuLinks.classList.remove("active");
+        }),
+      );
+    </script>
+  </body>
+</html>
